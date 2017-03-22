@@ -45,7 +45,12 @@ p{
 .inverselogo{
   background-color: White;
 }
+#hungry{
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
 #signup{
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #00CEC4;
-  outline-color: #00CEC4;
 }
