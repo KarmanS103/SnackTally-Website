@@ -1,0 +1,23 @@
+body{
+  background-color: #00CEC4;
+}
+#border{
+  display:block;
+}
+.username > * {
+  display: inline-block;
+}
+.email > * {
+  display: inline-block;
+}
+.password > * {
+  display: inline-block;
+}
+.password2 > * {
+  display: inline-block;
+}
+* {
+  font-family: Marker Felt;
+  color: Gray;
+  font-size: 24px;
+}
