@@ -60,8 +60,16 @@ color: white;
   color: white;
 }
 #signup{
-  color: white;
-  background-color: #00cec4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  background-color: white;
+}
+#signup2{
+  color: #00CEC4;
+  text-decoration: none;
+  font-size: 23px;
+  padding: 15px;
 }
 #slogan{
   padding-left: 200px;
