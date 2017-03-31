@@ -1,0 +1,76 @@
+*{
+    font-family: Marker Felt;
+}
+body{
+  background-color: #00CEC4;
+  color: white;
+}
+
+h1, h2, p{
+  text-align: center;
+  color: white;
+}
+h2{
+  font-size: 27px;
+}
+p{
+  text-align: center;
+  font-size: 21px;
+}
+.menu > * {
+  display: inline-block;
+}
+.firstpage > * {
+  display:inline-block;
+  padding-left: 170px;
+  padding-right: 50px;
+  padding-top: 40px;
+}
+.inverselogo{
+  background-color: White;
+}
+#divider{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#border{
+  width: 100%;
+  margin: 0%;
+}
+#hungry{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.column-left{
+  float: left; width: 33%;
+  text-align: center;
+  font-size: 21px
+  color: white;
+}
+.column-center{
+display: inline-block; width: 33%;
+text-align: center;
+font-size: 21px
+color: white;
+}
+.column-right{
+  float: right; width: 33%;
+  text-align: center;
+  font-size: 21px
+  color: white;
+}
+#signup{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  background-color: white;
+}
+#signup2{
+  color: #00CEC4;
+  text-decoration: none;
+  font-size: 23px;
+  padding: 15px;
+}
+#slogan{
+  padding-left: 200px;
+}
