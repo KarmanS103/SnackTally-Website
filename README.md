@@ -1,7 +1,7 @@
 # SnackTally-Website
 Website for SnackTally Inc. 
 
-Run `bower install` to install dependencies.
+Run `npm install` and `bower install` to install dependencies.
 
 To build, run `gulp build`
 
