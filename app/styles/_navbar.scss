@@ -1,0 +1,18 @@
+.topbar {
+    background: $color-primary;
+    height: 75px;
+    @include card;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 2;
+
+    .logo {
+        padding: 10px;
+        height: 100%;
+        width: auto;
+        padding-left: 80px;
+    }
+}

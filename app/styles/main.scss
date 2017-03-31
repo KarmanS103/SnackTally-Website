@@ -1,0 +1,238 @@
+$icon-font-path: '../fonts/';
+$color-primary: #00D6C7;
+$bg-color: #FAFAFA;
+$font-stack: 'Roboto', Helvetica, Arial, sans-serif;
+
+@mixin card {
+    box-shadow: 0 1px 2px rgba(black, 0.12), 0 1px 3px rgba(black, 0.24);
+}
+
+@mixin vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import 'navbar';
+
+html, body {
+    background: $bg-color;
+    height: 100%;
+    font-family: $font-stack;
+}
+
+.button-align {
+    text-align: center;
+}
+
+button {
+    padding: 12px 24px;
+    min-width: 120px;
+    font-weight: 100;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: none;
+    background: rgba(white, 0.05);
+    transition: background 0.15s;
+
+    &:hover {
+        background: rgba(white, 0.1);
+    }
+}
+
+.cover {
+    background: green;
+    background: url('../images/cover.jpg');
+    background-size: cover;
+    height: 100%;
+    color: white;
+
+    .cover-content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-weight: 100;
+
+        .cover-content {
+            width: 100%;
+            max-width: 800px;
+            z-index: 4;
+            height: 100%;
+        }
+
+        .col {
+            text-align: center;
+        }
+
+        .col-left {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 4em;
+            text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+            font-weight: 400;
+            text-align: left;
+
+            .light {
+                font-weight: 100;
+                font-size: 0.85em;
+                padding-left: 3px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .col-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            img {
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+
+    .filter {
+        @include vignette;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(#555, 0.7);
+    }
+}
+
+.slide {
+    min-height: 400px;
+    background: #EEE;
+    padding: 120px 0 150px;
+
+    .info-item {
+        color: #222;
+        text-align: center;
+        padding: 0 30px;
+
+        .item-header {
+            font-weight: bold;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+
+        .item-icon {
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 100px;
+                display: inline-block;
+                width: auto;
+            }
+        }
+
+        .item-content {
+            font-weight: 300;
+            font-size: 1.2em;
+            text-align: justify;
+        }
+    }
+}
+
+.footer {
+    background: #333;
+    min-height: 200px;
+}
+
+
+.modal-content {
+    border-radius: 2px;
+    padding: 30px;
+    text-align: center;
+    background: #FCFCFC;
+    padding-bottom: 30px;
+
+    h1 {
+        margin-bottom: 20px;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-left: 20px;
+    }
+
+    form {
+        display: inline-block;
+        max-width: 100%;
+        width: 400px;
+    }
+
+    .form-item {
+        padding: 12px;
+        label {
+            text-align: left;
+            font-weight: 300;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        input {
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #DDD;
+            // border: none;
+            // @include card;
+
+            &:focus {
+                outline: none;
+                border-left: 2px solid $color-primary;
+            }
+        }
+    }
+
+    .modal-footer {
+        padding-top: 20px;
+        button {
+            font-weight: 300;
+            font-size: 14px;
+            margin-left: 12px;
+            transition: all 0.15s;
+            background: white;
+            @include card;
+            border: none;
+
+            &.primary {
+                background: desaturate(darken($color-primary, 10%), 10%);
+                border: none;
+                color: white;
+
+                &:hover {
+                    background: desaturate(darken($color-primary, 8%), 10%);
+                    @include card;
+                }
+            }
+        }
+    }
+}
