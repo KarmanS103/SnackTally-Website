@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    
+
 
     <link rel="stylesheet" href="styles/main.css">
 
@@ -92,23 +92,23 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <h1> Sign up </h1>
-                <form>
+                <form action="connectdb.php" method="post">
                     <div class='form-item'>
                         <label>
                             Username
-                            <input type='text'></input>
+                            <input type ="text" id="USN" name="USN" required type ="text">
                         <label>
                     </div>
                     <div class='form-item'>
                         <label>
                             Email Address
-                            <input type='email'></input>
+                            <input type ="email" id="Email" name="Email" required type="text">
                         <label>
                     </div>
                     <div class='form-item'>
                         <label>
                             Password
-                            <input type='password'></input>
+                            <input type ="password" id ="Pass" name="Pass" required type ="text">
                         <label>
                     </div>
                     <div class='form-item'>
