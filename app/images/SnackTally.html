@@ -9,7 +9,12 @@
           <a href= "SnackTally.html">
             <img src = "Logo.jpg" width="200" height="78"/>
           </a>
-          <button style="float: right;" type="button">
+          <ul>
+            <li><a id="home">Home</a><li>
+            <li><a id="home1">Home</a><li>
+            <li><a id="home2">Home</a><li>
+            <li><a id="home3">Home</a><li>
+          <button id= "icon" type="button">
             <img src = "icon.jpg" height="78"/>
           </button>
         </div>
@@ -47,9 +52,44 @@
         </div>
         <img id="divider" src = "divider.png" width = "1260"/>
         <h1 id="hungry">Feelin' Hungry?</h1>
-        <button id="signup" type="button">
-          <a id="signup2" href="signup.html">Sign Up for a SnackTally Profile! </a>
-        </button>
+        </br></br></br>
+        <div class="container">
+          <div class="column-left2">
+            <h2></h2>
+          </div>
+          <div class="column-center2">
+            <button id="signup" onclick="document.getElementById('id01').style.display='block'">Sign Up for a SnackTally Profile!</button>
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <form class="modal-content animate" action="http://snacktally.com/connectdb.php">
+                <div class="container">
+                  <label><b> </b></label>
+                  <input type="text" placeholder="Enter Username" name="Username" required>
+                </br></br>
+                  <label><b> </b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+                </br></br>
+                  <label><b> </b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                </br></br>
+                  <label><b> </b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                </br></br>
+                <div class="rememberme">
+                  <input id="remember1" type="checkbox" checked="checked"> <p id="remember"> Remember me </p>
+                </div>
+                  <p id="agreement">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="column-right2">
+            <h2></h2>
+          </div>
+        </div>
   </body>
   </br></br></br></br></br></br>
   <div class="inverselogo" >
